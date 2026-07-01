@@ -1,0 +1,38 @@
+{
+  "brand": "삼성",
+  "updated_at": "2026-07-01T19:09:07Z",
+  "items": [
+    {
+      "pid": "334347659",
+      "name": "삼성칩 노트북 램8기가 DDR3 8GB PC3L-14900 1866MHz RAM 저전력 메모리 새상품, 노트북 저전력 8GB 램 PC3L-14900 새상품, 1개",
+      "brand": "삼성",
+      "category": "office",
+      "cpu_tier": "other",
+      "gpu_tier": "igpu",
+      "current_price": 26300,
+      "original_price": 28900,
+      "drop_pct": 9.0,
+      "source": "watchlist",
+      "condition_label": "",
+      "vendor_item_id": "88480617692",
+      "url": "https://www.coupang.com/vp/products/334347659",
+      "last_updated": "2026-07-01 02:36:39"
+    },
+    {
+      "pid": "7006623610",
+      "name": "삼성전자 2021 갤럭시북 프로 15.6",
+      "brand": "삼성",
+      "category": "business",
+      "cpu_tier": "other",
+      "gpu_tier": "igpu",
+      "current_price": 1678270,
+      "original_price": 1678270,
+      "drop_pct": 0.0,
+      "source": "new_products",
+      "condition_label": "",
+      "vendor_item_id": null,
+      "url": "https://www.coupang.com/vp/products/7006623610",
+      "last_updated": "2026-05-06 03:06:44"
+    }
+  ]
+}
