@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="쿠팡 노트북 전체 카탈로그 — 2,200+ 상품 브랜드/카테고리/할인율별 정렬">
+<title>노트북 카탈로그 — 전체 탐지 상품</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+<style>
+:root {
+  --bg: #fafafa;
+  --card: #ffffff;
+  --border: #e8eaed;
+  --border-strong: #d1d5db;
+  --text: #0a0a0a;
+  --text2: #525866;
+  --text3: #9ca3af;
+  --accent: #dc2626;
+  --accent-bg: #fef2f2;
+  --live: #10b981;
+  --tg: #229ED9;
+  --shadow: 0 1px 2px rgba(0,0,0,.04);
+  --radius: 10px;
+  --radius-sm: 6px;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--text); }
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased; line-height: 1.5;
+}
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; background: none; border: none; color: inherit; }
+input { font-family: inherit; }
+
+/* ── 헤더 ── */
+.header {
+  background: var(--card); border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 30;
+}
+.header-inner {
+  max-width: 1280px; margin: 0 auto;
+  padding: 11px 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.brand {
+  display: flex; align-items: center; gap: 9px;
+  font-weight: 700; font-size: 15px; letter-spacing: -0.015em;
+}
+.brand-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--live); box-shadow: 0 0 0 3px rgba(16,185,129,.15);
+  animation: livepulse 2s ease-in-out infinite; flex-shrink: 0;
+}
+@keyframes livepulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(16,185,129,.18); }
+  50% { box-shadow: 0 0 0 5px rgba(16,185,129,.04); }
+}
+.brand-meta { font-size: 11px; font-family: var(--mono); color: var(--text3); }
+.header-actions { display: flex; align-items: center; gap: 4px; }
+.header-link {
+  font-size: 13px; padding: 6px 10px; border-radius: var(--radius-sm);
+  color: var(--text2); transition: background .15s, color .15s;
+}
+.header-link:hover { background: var(--bg); color: var(--text); }
+.tg-pill {
+  background: var(--text); color: #fff;
+  padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 600;
+}
+.tg-pill:hover { background: #1f2937; }
+
+/* ── 컨테이너 ── */
+.container { max-width: 1280px; margin: 0 auto; padding: 16px; }
+
+/* ── 필터 바 ── */
+.filter-bar {
+  background: var(--card);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 14px; margin-bottom: 14px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.filter-row {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.filter-label {
+  font-size: 12px; font-weight: 600; color: var(--text2);
+  min-width: 56px;
+}
+.filter-chip {
+  padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 500;
+  border: 1px solid var(--border); color: var(--text2);
+  transition: all .15s;
+}
+.filter-chip:hover { background: var(--bg); }
+.filter-chip.active {
+  background: var(--text); color: #fff; border-color: var(--text);
+}
+.filter-chip .count {
+  font-family: var(--mono); font-size: 10px; opacity: 0.7; margin-left: 4px;
+}
+.search-input {
+  flex: 1; min-width: 200px;
+  padding: 8px 12px; font-size: 13px;
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  background: var(--bg);
+}
+.search-input:focus { outline: 2px solid var(--text); outline-offset: -1px; background: var(--card); }
+.sort-select {
+  padding: 7px 10px; font-size: 12px; font-weight: 500;
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  background: var(--card); cursor: pointer;
+}
+
+/* ── 통계 헤더 ── */
+.stats-row {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px; padding: 0 4px;
+}
+.stats-count {
+  font-size: 13px; color: var(--text2);
+}
+.stats-count .num { font-weight: 700; color: var(--text); }
+.stats-meta { font-size: 11px; font-family: var(--mono); color: var(--text3); }
+
+/* ── 카드 그리드 ── */
+.card-grid {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px;
+  display: flex; flex-direction: column; gap: 10px;
+  transition: border-color .15s, box-shadow .15s;
+  cursor: pointer; position: relative;
+}
+.card:hover { border-color: var(--border-strong); box-shadow: var(--shadow); }
+.card-header {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+}
+.card-brand {
+  font-size: 10px; font-weight: 700; color: var(--text2);
+  padding: 3px 7px; border-radius: 4px; background: var(--bg); letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+.card-category {
+  font-size: 10px; font-weight: 500; color: var(--text3);
+  padding: 3px 7px; border-radius: 4px;
+  border: 1px solid var(--border);
+}
+.cat-premium { color: #ea580c; border-color: #fed7aa; background: #fff7ed; }
+.cat-gaming { color: #7c3aed; border-color: #ddd6fe; background: #f5f3ff; }
+.cat-graphic { color: #0891b2; border-color: #a5f3fc; background: #ecfeff; }
+.cat-business { color: #059669; border-color: #a7f3d0; background: #ecfdf5; }
+.cat-office { color: var(--text2); border-color: var(--border); background: var(--bg); }
+
+.card-name {
+  font-size: 13px; font-weight: 500; color: var(--text);
+  line-height: 1.4; min-height: 36px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-specs {
+  display: flex; gap: 6px; flex-wrap: wrap;
+  font-size: 10px; font-family: var(--mono); color: var(--text3);
+}
+.spec-tag {
+  padding: 2px 6px; border-radius: 3px; background: var(--bg);
+}
+
+.card-price-row {
+  display: flex; align-items: baseline; gap: 8px;
+  border-top: 1px dashed var(--border); padding-top: 10px;
+}
+.current-price {
+  font-size: 17px; font-weight: 700; font-family: var(--mono);
+  letter-spacing: -0.02em;
+}
+.original-price {
+  font-size: 11px; color: var(--text3); text-decoration: line-through;
+  font-family: var(--mono);
+}
+.drop-badge {
+  margin-left: auto;
+  background: var(--accent-bg); color: var(--accent);
+  font-size: 12px; font-weight: 700; font-family: var(--mono);
+  padding: 3px 8px; border-radius: 4px;
+}
+.drop-badge.zero { color: var(--text3); background: var(--bg); }
+
+.card-source {
+  font-size: 10px; font-family: var(--mono); color: var(--text3);
+}
+.card-source .src-tag { padding: 2px 5px; border-radius: 3px; background: var(--bg); margin-right: 4px; }
+
+/* ── 페이지네이션 ── */
+.pagination {
+  display: flex; justify-content: center; align-items: center; gap: 4px;
+  margin: 24px 0;
+}
+.page-btn {
+  padding: 6px 10px; font-size: 12px; font-weight: 500;
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  background: var(--card); color: var(--text2);
+  min-width: 32px;
+}
+.page-btn.active { background: var(--text); color: #fff; border-color: var(--text); }
+.page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── 로딩 ── */
+.loading {
+  text-align: center; padding: 60px 20px; color: var(--text2);
+}
+.empty {
+  text-align: center; padding: 60px 20px; color: var(--text3);
+  border: 1px dashed var(--border); border-radius: var(--radius);
+  background: var(--card);
+}
+
+/* ── 반응형 ── */
+@media (max-width: 640px) {
+  .header-inner { padding: 10px 12px; }
+  .container { padding: 12px; }
+  .filter-bar { padding: 12px; gap: 10px; }
+  .card-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+  .card { padding: 10px; }
+  .filter-label { display: none; }
+}
+</style>
+</head>
+<body x-data="catalog()">
+
+<header class="header">
+  <div class="header-inner">
+    <a href="./index.html" class="brand">
+      <span class="brand-dot"></span>
+      <span>노트북 카탈로그</span>
+      <span class="brand-meta" x-text="meta"></span>
+    </a>
+    <div class="header-actions">
+      <a href="./index.html" class="header-link">핫딜</a>
+      <a href="./info.html" class="header-link">정보</a>
+      <a href="https://t.me/Notebook_alimi" class="tg-pill" target="_blank">텔레그램 채널</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- 필터 바 -->
+  <div class="filter-bar">
+    <div class="filter-row">
+      <input type="search" class="search-input" placeholder="상품명 검색 (예: 그램, 오멘, RTX)" x-model="search">
+      <select class="sort-select" x-model="sortBy">
+        <option value="discount">할인율 ↓</option>
+        <option value="price_high">가격 ↓ (높은 순)</option>
+        <option value="price_low">가격 ↑ (낮은 순)</option>
+        <option value="recent">최신순</option>
+      </select>
+    </div>
+
+    <div class="filter-row">
+      <span class="filter-label">용도</span>
+      <button class="filter-chip" :class="categoryFilter==='all' && 'active'" @click="categoryFilter='all'">
+        전체 <span class="count" x-text="meta_total"></span>
+      </button>
+      <template x-for="cat in categories" :key="cat.key">
+        <button class="filter-chip" :class="categoryFilter===cat.key && 'active'" @click="categoryFilter=cat.key">
+          <span x-text="cat.label"></span> <span class="count" x-text="cat.count"></span>
+        </button>
+      </template>
+    </div>
+
+    <div class="filter-row">
+      <span class="filter-label">브랜드</span>
+      <button class="filter-chip" :class="brandFilter==='all' && 'active'" @click="brandFilter='all'">
+        전체
+      </button>
+      <template x-for="brand in brands" :key="brand.key">
+        <button class="filter-chip" :class="brandFilter===brand.key && 'active'" @click="brandFilter=brand.key">
+          <span x-text="brand.key"></span> <span class="count" x-text="brand.count"></span>
+        </button>
+      </template>
+    </div>
+  </div>
+
+  <!-- 통계 -->
+  <div class="stats-row">
+    <div class="stats-count">
+      <span class="num" x-text="filtered.length.toLocaleString()"></span>건 표시
+      <span x-show="filtered.length !== meta_total" x-cloak> (전체 <span x-text="meta_total.toLocaleString()"></span>건 중)</span>
+    </div>
+    <div class="stats-meta" x-text="updated"></div>
+  </div>
+
+  <!-- 로딩 -->
+  <div class="loading" x-show="loading" x-cloak>데이터 불러오는 중...</div>
+
+  <!-- 빈 결과 -->
+  <div class="empty" x-show="!loading && filtered.length === 0" x-cloak>
+    조건에 맞는 상품이 없습니다.
+  </div>
+
+  <!-- 카드 그리드 -->
+  <div class="card-grid" x-show="!loading && paginated.length > 0" x-cloak>
+    <template x-for="p in paginated" :key="p.pid">
+      <a :href="p.url" target="_blank" class="card">
+        <div class="card-header">
+          <span class="card-brand" x-text="p.brand"></span>
+          <span class="card-category" :class="'cat-' + p.category" x-text="categoryLabel(p.category)"></span>
+        </div>
+        <div class="card-name" x-text="p.name"></div>
+        <div class="card-specs">
+          <span class="spec-tag" x-show="p.cpu_tier !== 'other'" x-text="cpuLabel(p.cpu_tier)"></span>
+          <span class="spec-tag" x-show="p.gpu_tier !== 'igpu'" x-text="gpuLabel(p.gpu_tier)"></span>
+          <span class="spec-tag" x-show="p.condition_label" x-text="condLabel(p.condition_label)"></span>
+        </div>
+        <div class="card-price-row">
+          <span class="current-price" x-text="(p.current_price || 0).toLocaleString() + '원'"></span>
+          <span class="original-price" x-show="p.original_price > p.current_price" x-text="p.original_price.toLocaleString() + '원'"></span>
+          <span class="drop-badge" :class="p.drop_pct === 0 && 'zero'" x-text="p.drop_pct > 0 ? '-' + p.drop_pct + '%' : '동일'"></span>
+        </div>
+        <div class="card-source">
+          <span class="src-tag" x-text="sourceLabel(p.source)"></span>
+        </div>
+      </a>
+    </template>
+  </div>
+
+  <!-- 페이지네이션 -->
+  <div class="pagination" x-show="totalPages > 1" x-cloak>
+    <button class="page-btn" :disabled="page === 1" @click="page = 1">«</button>
+    <button class="page-btn" :disabled="page === 1" @click="page--">‹</button>
+    <template x-for="n in pageNumbers" :key="n">
+      <button class="page-btn" :class="n === page && 'active'" @click="page = n" x-text="n"></button>
+    </template>
+    <button class="page-btn" :disabled="page === totalPages" @click="page++">›</button>
+    <button class="page-btn" :disabled="page === totalPages" @click="page = totalPages">»</button>
+  </div>
+
+</div>
+
+<script>
+const CATEGORY_LABELS = {
+  premium: '프리미엄', gaming: '게이밍', graphic: '그래픽',
+  business: '비즈니스', office: '사무용',
+};
+const CPU_LABELS = {
+  ultra9: 'Ultra 9', ultra7: 'Ultra 7', ultra5: 'Ultra 5',
+  i9: 'i9', i7: 'i7', i5: 'i5',
+  ryzen9: 'Ryzen 9', ryzen7: 'Ryzen 7', ryzen5: 'Ryzen 5',
+  ai300: 'Ryzen AI', arm: 'ARM',
+};
+const GPU_LABELS = {
+  rtx5090: 'RTX 5090', rtx5080: 'RTX 5080', rtx5070: 'RTX 5070', rtx5060: 'RTX 5060',
+  rtx40xx: 'RTX 40xx', rtx30xx: 'RTX 30xx', radeon: 'Radeon',
+};
+const COND_LABELS = {
+  return_like_new: '미개봉', return_good: '반품(양호)',
+  return_damaged_box: '박스훼손', return_unopened: '미개봉반품',
+};
+const SOURCE_LABELS = {
+  offers: '반품', watchlist: '위시', new_products: '신품',
+  'offers+new': '반품+신품',
+};
+
+function catalog() {
+  return {
+    loading: true,
+    products: [],
+    meta: '',
+    updated: '',
+    meta_total: 0,
+    categories: [],
+    brands: [],
+    search: '',
+    sortBy: 'discount',
+    categoryFilter: 'all',
+    brandFilter: 'all',
+    page: 1,
+    perPage: 48,
+
+    async init() {
+      try {
+        // 2026-06-15 절대 경로 사용 (redirect 후 base URL 모호 회피)
+        const res = await fetch('/catalog/index.json?t=' + Date.now());
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        this.products = data.products || [];
+        this.meta_total = data.total || 0;
+        const updated = data.updated_at ? new Date(data.updated_at) : null;
+        if (updated) {
+          this.updated = '갱신 ' + updated.toLocaleString('ko-KR', { hour12: false });
+          this.meta = updated.toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false });
+        }
+
+        const cats = data.categories || {};
+        this.categories = ['premium', 'gaming', 'graphic', 'business', 'office']
+          .filter(k => cats[k])
+          .map(k => ({ key: k, label: CATEGORY_LABELS[k] || k, count: cats[k] }));
+
+        const brs = data.brands || {};
+        this.brands = Object.entries(brs)
+          .sort((a, b) => b[1] - a[1])
+          .map(([k, c]) => ({ key: k, count: c }));
+
+        this.loading = false;
+      } catch (err) {
+        console.error(err);
+        this.loading = false;
+      }
+
+      this.$watch('search', () => { this.page = 1; });
+      this.$watch('categoryFilter', () => { this.page = 1; });
+      this.$watch('brandFilter', () => { this.page = 1; });
+      this.$watch('sortBy', () => { this.page = 1; });
+    },
+
+    get filtered() {
+      let items = this.products;
+      if (this.categoryFilter !== 'all') {
+        items = items.filter(p => p.category === this.categoryFilter);
+      }
+      if (this.brandFilter !== 'all') {
+        items = items.filter(p => p.brand === this.brandFilter);
+      }
+      if (this.search.trim()) {
+        const q = this.search.trim().toLowerCase();
+        items = items.filter(p => (p.name || '').toLowerCase().includes(q));
+      }
+      const sorted = [...items];
+      if (this.sortBy === 'discount') sorted.sort((a, b) => b.drop_pct - a.drop_pct);
+      else if (this.sortBy === 'price_high') sorted.sort((a, b) => b.current_price - a.current_price);
+      else if (this.sortBy === 'price_low') sorted.sort((a, b) => a.current_price - b.current_price);
+      else if (this.sortBy === 'recent') sorted.sort((a, b) => (b.last_updated || '').localeCompare(a.last_updated || ''));
+      return sorted;
+    },
+    get totalPages() { return Math.max(1, Math.ceil(this.filtered.length / this.perPage)); },
+    get paginated() {
+      const start = (this.page - 1) * this.perPage;
+      return this.filtered.slice(start, start + this.perPage);
+    },
+    get pageNumbers() {
+      const total = this.totalPages;
+      const cur = this.page;
+      const max = 7;
+      if (total <= max) return Array.from({ length: total }, (_, i) => i + 1);
+      let start = Math.max(1, cur - 3);
+      let end = Math.min(total, start + max - 1);
+      start = Math.max(1, end - max + 1);
+      return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+    },
+    categoryLabel(k) { return CATEGORY_LABELS[k] || k; },
+    cpuLabel(k) { return CPU_LABELS[k] || k; },
+    gpuLabel(k) { return GPU_LABELS[k] || k; },
+    condLabel(k) { return COND_LABELS[k] || k; },
+    sourceLabel(k) { return SOURCE_LABELS[k] || k; },
+  };
+}
+</script>
+
+<style>[x-cloak] { display: none !important; }</style>
+</body>
+</html>
