@@ -1,0 +1,88 @@
+{
+  "updated_at": "2026-09-26T19:58:37Z",
+  "recommended": [],
+  "new": [],
+  "return": [
+    {
+      "product_id": "8024922343",
+      "product_name": "델 2024 XPS 13 9340 코어Ultra7, 플래티넘 실버, 1TB, 16GB, WIN11 Pro, DX9340-WP02KR",
+      "current_price": 1563320,
+      "original_price": 2673630,
+      "drop_pct": 41.5,
+      "affiliate_url": "https://link.coupang.com/a/hiHaMApTfU",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-09-24T06:03:38Z",
+      "updated_at": "2026-09-26T19:58:37Z"
+    },
+    {
+      "product_id": "9281527133",
+      "product_name": "LG전자 2026 그램북 AI 15 코어 Ultra5, 타이탄 블랙, 256GB, 8GB, WIN11 Home, 15U50U-GR5CK",
+      "current_price": 795070,
+      "original_price": 1199000,
+      "drop_pct": 33.7,
+      "affiliate_url": "https://link.coupang.com/a/hi4MuK6oQS",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-09-24T11:33:58Z",
+      "updated_at": "2026-09-26T19:58:37Z"
+    },
+    {
+      "product_id": "9334281657",
+      "product_name": "HP 2026 노트북 250R G9 15 코어5 인텔 13세대, 15-C4JR6AT, WIN11 Home, 16GB, 512GB, 블랙",
+      "current_price": 739380,
+      "original_price": 1159000,
+      "drop_pct": 36.2,
+      "affiliate_url": "https://link.coupang.com/a/hl00J5sFyu",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-09-26T06:04:01Z",
+      "updated_at": "2026-09-26T19:58:37Z"
+    }
+  ],
+  "failed_partner": [],
+  "stale_price": [
+    {
+      "product_id": "9482798872",
+      "product_name": "HP 2026 옴니북 3 AI 16 라이젠 AI 라이젠 400 시리즈, Glacier Silver, 16-bv0027AU, 512GB, 16GB, WIN11 Home",
+      "current_price": 925760,
+      "original_price": 1349000,
+      "drop_pct": 31.4,
+      "affiliate_url": "https://link.coupang.com/a/hgdTHICrOS",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-09-19T02:06:08Z",
+      "updated_at": "2026-09-26T19:58:37Z"
+    },
+    {
+      "product_id": "9386056825",
+      "product_name": "레노버 2026 아이디어패드 슬림 3 15ABR8 라이젠7 라이젠 5000 시리즈, Arctic Grey, 82XM015WKR, 512GB, 16GB, Free DOS",
+      "current_price": 763490,
+      "original_price": 899000,
+      "drop_pct": 15.1,
+      "affiliate_url": "https://link.coupang.com/a/hf70jOC8XY",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-09-22T16:56:17Z",
+      "updated_at": "2026-09-26T19:58:37Z"
+    },
+    {
+      "product_id": "8518435269",
+      "product_name": "LG전자 2025 그램 16 코어Ultra5, 스노우 화이트, 256GB, 16GB, WIN11 Home, 16Z90S-GA5VK",
+      "current_price": 1469630,
+      "original_price": 1705000,
+      "drop_pct": 13.8,
+      "affiliate_url": "https://link.coupang.com/a/hmtYYy5wHZ",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-09-26T12:49:28Z",
+      "updated_at": "2026-09-26T19:58:37Z"
+    }
+  ]
+}
