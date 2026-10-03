@@ -1,0 +1,140 @@
+{
+  "updated_at": "2026-10-03T23:34:40Z",
+  "recommended": [],
+  "new": [],
+  "return": [
+    {
+      "product_id": "9517918604",
+      "product_name": "HP 2026 오멘 16 코어Ultra5 인텔 14세대 지포스 RTX 5060, Shadow Black, 16-am0410TX_1, 1TB, 48GB, Free DOS",
+      "current_price": 2174130,
+      "original_price": 3249000,
+      "drop_pct": 33.1,
+      "affiliate_url": "https://link.coupang.com/a/htn05OjRtI",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-09-30T16:39:14Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    },
+    {
+      "product_id": "9047218674",
+      "product_name": "에이서 2025 스위프트 라이트 16 코어Ultra5 인텔 14세대, Light Silver, 512GB, 16GB, WIN11 Home, SFL16-51M-510Z",
+      "current_price": 938530,
+      "original_price": 1653000,
+      "drop_pct": 43.2,
+      "affiliate_url": "https://link.coupang.com/a/htY4CpRrgW",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-01T01:17:47Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    },
+    {
+      "product_id": "9334281657",
+      "product_name": "HP 2026 노트북 250R G9 15 코어5 인텔 13세대, 15-C4JR6AT, WIN11 Home, 16GB, 512GB, 블랙",
+      "current_price": 739380,
+      "original_price": 1159000,
+      "drop_pct": 36.2,
+      "affiliate_url": "https://link.coupang.com/a/hxC6PZUog0",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-03T06:00:51Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    },
+    {
+      "product_id": "9296717161",
+      "product_name": "HP 2026 노트북 17 코어5 인텔 14세대, Natural Silver, 17-cn4037TU Super, 512GB, 16GB, WIN11 Home",
+      "current_price": 727560,
+      "original_price": 1198990,
+      "drop_pct": 39.3,
+      "affiliate_url": "https://link.coupang.com/a/hytZxasiXY",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-03T18:20:50Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    },
+    {
+      "product_id": "7951227991",
+      "product_name": "HP 2024 노트북 17 코어5 인텔 14세대, Natural Silver, 256GB, 16GB, WIN11 Home, 17-cn4012TU",
+      "current_price": 665870,
+      "original_price": 999000,
+      "drop_pct": 33.3,
+      "affiliate_url": "https://link.coupang.com/a/hytZEQ2Omi",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-03T18:20:54Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    }
+  ],
+  "failed_partner": [],
+  "stale_price": [
+    {
+      "product_id": "9386056825",
+      "product_name": "레노버 2026 아이디어패드 슬림 3 15ABR8 라이젠7 라이젠 5000 시리즈, Arctic Grey, 82XM015WKR, 512GB, 16GB, Free DOS",
+      "current_price": 623200,
+      "original_price": 899000,
+      "drop_pct": 30.7,
+      "affiliate_url": "https://link.coupang.com/a/ht45XEzV12",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-09-22T16:56:17Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    },
+    {
+      "product_id": "8952604203",
+      "product_name": "LG전자 2023 울트라 PC 15 코어i5 인텔 13세대 지포스 MX550, 화이트, 256GB, 16GB, WIN11 Home, 15U50R-SA5CK",
+      "current_price": 956910,
+      "original_price": 1390000,
+      "drop_pct": 31.2,
+      "affiliate_url": "https://link.coupang.com/a/httHZQYDYa",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-09-28T03:34:20Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    },
+    {
+      "product_id": "6595058753",
+      "product_name": "델 2022 에일리언웨어 X17 R2 코어i9 인텔 12세대 지포스 RTX 3080 Ti, Lunar Light, 1TB, 64GB, WIN11 Pro, DAWX17R2-WP09KR",
+      "current_price": 4112070,
+      "original_price": 5920000,
+      "drop_pct": 30.5,
+      "affiliate_url": "https://link.coupang.com/a/ht45P2J3tI",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-10-01T02:42:02Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    },
+    {
+      "product_id": "9374268323",
+      "product_name": "HP 2026 옴니 스튜디오 라이젠5 라이젠 200 시리즈, Cotton white, 27-cv0000KL Max, 512GB, 16GB, WIN11 Home",
+      "current_price": 971300,
+      "original_price": 1449000,
+      "drop_pct": 33.0,
+      "affiliate_url": "https://link.coupang.com/a/hwpjfesZAy",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-10-01T20:42:25Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    },
+    {
+      "product_id": "7632466301",
+      "product_name": "HP 2023 오멘 16 16.1 코어i5 인텔 13세대 지포스 RTX 4060, ShadowBlack, 1TB, 32GB, WIN11 Home, 16-wf0156TX",
+      "current_price": 1578210,
+      "original_price": 2001030,
+      "drop_pct": 21.1,
+      "affiliate_url": "https://link.coupang.com/a/hvIrfg6EnY",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-10-02T02:21:19Z",
+      "updated_at": "2026-10-03T23:34:40Z"
+    }
+  ]
+}
