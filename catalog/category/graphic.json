@@ -1,0 +1,70 @@
+{
+  "category": "graphic",
+  "updated_at": "2026-10-10T23:41:28Z",
+  "items": [
+    {
+      "pid": "8000348304",
+      "name": "HP 2023 빅터스 15 코어i5 인텔 13세대 지포스 RTX 4050, Mica Sliver, 2TB, 32GB, Free DOS, 15-fa1014T2D",
+      "brand": "HP",
+      "category": "graphic",
+      "cpu_tier": "i5",
+      "gpu_tier": "rtx40xx",
+      "current_price": 1353670,
+      "original_price": 1707420,
+      "drop_pct": 20.7,
+      "source": "offers",
+      "condition_label": "return_unknown",
+      "vendor_item_id": "94073621697",
+      "url": "https://www.coupang.com/vp/products/8000348304",
+      "last_updated": "2026-06-15 05:09:28"
+    },
+    {
+      "pid": "8437020602",
+      "name": "에이서 2024 스위프트 X 14 코어Ultra7 지포스 RTX 4060, 512GB, 32GB, WIN11 Home, SFX14-72G-79BU",
+      "brand": "에이서",
+      "category": "graphic",
+      "cpu_tier": "ultra7",
+      "gpu_tier": "rtx40xx",
+      "current_price": 1335010,
+      "original_price": 1668770,
+      "drop_pct": 20.0,
+      "source": "offers",
+      "condition_label": "return_fair",
+      "vendor_item_id": "91416556409",
+      "url": "https://www.coupang.com/vp/products/8437020602",
+      "last_updated": "2026-06-11 14:55:07"
+    },
+    {
+      "pid": "7922827063",
+      "name": "HP 2024 오멘 14 SLIM 코어Ultra9 인텔 14세대 지포스 RTX 4060, Shadow Black, 1TB, 32GB, WIN11 Home, 14-fb0075TX",
+      "brand": "HP",
+      "category": "graphic",
+      "cpu_tier": "ultra9",
+      "gpu_tier": "rtx40xx",
+      "current_price": 1752860,
+      "original_price": 1938222,
+      "drop_pct": 9.6,
+      "source": "watchlist",
+      "condition_label": "",
+      "vendor_item_id": "89629935523",
+      "url": "https://www.coupang.com/vp/products/7922827063",
+      "last_updated": "2026-09-27 20:48:25"
+    },
+    {
+      "pid": "8635656399",
+      "name": "HP 2024 빅터스 16 라이젠7 라이젠 8000 시리즈 지포스 RTX 4060, 미카실버, 1TB, 32GB, Free DOS, 16-s1037A1D",
+      "brand": "HP",
+      "category": "graphic",
+      "cpu_tier": "ryzen7",
+      "gpu_tier": "rtx40xx",
+      "current_price": 1446220,
+      "original_price": 1446220,
+      "drop_pct": 0.0,
+      "source": "watchlist",
+      "condition_label": "",
+      "vendor_item_id": "95384013396",
+      "url": "https://www.coupang.com/vp/products/8635656399",
+      "last_updated": "2026-10-06 06:42:54"
+    }
+  ]
+}

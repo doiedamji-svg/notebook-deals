@@ -1,0 +1,61 @@
+{
+  "updated_at": "2026-10-10T23:41:28Z",
+  "recommended": [],
+  "new": [],
+  "return": [
+    {
+      "product_id": "7827829511",
+      "product_name": "HP 2024 엘리트북 845 G10 14 라이젠5 Pro 라이젠 7000 시리즈, 실버, 512GB, 16GB, WIN11 Pro, G10-9P1J8PT",
+      "current_price": 909760,
+      "original_price": 2155100,
+      "drop_pct": 57.8,
+      "affiliate_url": "https://link.coupang.com/a/hFU0e39e1s",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-06T06:43:13Z",
+      "updated_at": "2026-10-10T23:41:28Z"
+    },
+    {
+      "product_id": "6408768850",
+      "product_name": "기가바이트 2022 어로스 5 15.6 코어i7 인텔 12세대 지포스 RTX 3070, 블랙, 512GB, 16GB, Free DOS, AORUS 5 SE4",
+      "current_price": 1078000,
+      "original_price": 2199800,
+      "drop_pct": 51.0,
+      "affiliate_url": "https://link.coupang.com/a/hFWIbn48Bw",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-06T06:43:34Z",
+      "updated_at": "2026-10-10T23:41:28Z"
+    },
+    {
+      "product_id": "9374268323",
+      "product_name": "HP 2026 옴니 스튜디오 라이젠5 라이젠 200 시리즈, Cotton white, 27-cv0000KL Max, 512GB, 16GB, WIN11 Home",
+      "current_price": 928610,
+      "original_price": 1449000,
+      "drop_pct": 35.9,
+      "affiliate_url": "https://link.coupang.com/a/hGyZRKE9Ey",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-08T11:36:36Z",
+      "updated_at": "2026-10-10T23:41:28Z"
+    },
+    {
+      "product_id": "8022528453",
+      "product_name": "델 2024 XPS 14 9440 코어Ultra7, 플래티넘 실버, 512GB, 16GB, WIN11 Pro, DX9440-WP01KR",
+      "current_price": 1590110,
+      "original_price": 2960000,
+      "drop_pct": 46.3,
+      "affiliate_url": "https://link.coupang.com/a/hJuLbCIzOC",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-10T09:35:15Z",
+      "updated_at": "2026-10-10T23:41:28Z"
+    }
+  ],
+  "failed_partner": [],
+  "stale_price": []
+}
