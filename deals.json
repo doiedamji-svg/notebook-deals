@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-10-17T17:33:00Z",
+  "recommended": [],
+  "new": [],
+  "return": [
+    {
+      "product_id": "8616479488",
+      "product_name": "에이수스 2025 젠북 S 16 OLED 라이젠 AI 라이젠 AI 300 시리즈, 스칸디나비안 화이트, 1TB, 24GB, WIN11 Home, UM5606KA-RJ014W",
+      "current_price": 2075750,
+      "original_price": 3598500,
+      "drop_pct": 42.3,
+      "affiliate_url": "https://link.coupang.com/a/hRThkMCSCi",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-15T10:59:14Z",
+      "updated_at": "2026-10-17T17:33:00Z"
+    },
+    {
+      "product_id": "6408768850",
+      "product_name": "기가바이트 2022 어로스 5 15.6 코어i7 인텔 12세대 지포스 RTX 3070, 블랙, 512GB, 16GB, Free DOS, AORUS 5 SE4",
+      "current_price": 1242720,
+      "original_price": 2199800,
+      "drop_pct": 43.5,
+      "affiliate_url": "https://link.coupang.com/a/hVhpIFTGTs",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-17T11:59:48Z",
+      "updated_at": "2026-10-17T17:33:00Z"
+    }
+  ],
+  "failed_partner": [],
+  "stale_price": []
+}
