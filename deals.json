@@ -1,0 +1,36 @@
+{
+  "updated_at": "2026-10-31T15:03:06Z",
+  "recommended": [],
+  "new": [],
+  "return": [
+    {
+      "product_id": "9041942471",
+      "product_name": "HP 2025 노트북 15 N-시리즈 N-시리즈, 내추럴 실버, 128GB, 8GB, WIN11 S, 15-fd0654TU",
+      "current_price": 431200,
+      "original_price": 638200,
+      "drop_pct": 32.4,
+      "affiliate_url": "https://link.coupang.com/a/idA4muUMLI",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-10-27T04:15:04Z",
+      "updated_at": "2026-10-31T15:03:06Z"
+    }
+  ],
+  "failed_partner": [],
+  "stale_price": [
+    {
+      "product_id": "9277699361",
+      "product_name": "HP 2026 오멘 16 코어Ultra7 인텔 14세대 지포스 RTX 5060, Shadow Black, 1TB, 24GB, WIN11 Home, 16-am0341TX",
+      "current_price": 2351200,
+      "original_price": 3149000,
+      "drop_pct": 25.3,
+      "affiliate_url": "https://link.coupang.com/a/iaCF8vLeRE",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-10-26T17:51:27Z",
+      "updated_at": "2026-10-31T15:03:06Z"
+    }
+  ]
+}

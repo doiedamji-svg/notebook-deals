@@ -1,0 +1,22 @@
+{
+  "brand": "삼성",
+  "updated_at": "2026-10-31T15:03:06Z",
+  "items": [
+    {
+      "pid": "7006623610",
+      "name": "삼성전자 2021 갤럭시북 프로 15.6",
+      "brand": "삼성",
+      "category": "business",
+      "cpu_tier": "other",
+      "gpu_tier": "igpu",
+      "current_price": 1678270,
+      "original_price": 1678270,
+      "drop_pct": 0.0,
+      "source": "new_products",
+      "condition_label": "",
+      "vendor_item_id": null,
+      "url": "https://www.coupang.com/vp/products/7006623610",
+      "last_updated": "2026-05-06 03:06:44"
+    }
+  ]
+}
