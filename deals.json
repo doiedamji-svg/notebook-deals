@@ -1,0 +1,61 @@
+{
+  "updated_at": "2026-11-07T13:40:15Z",
+  "recommended": [],
+  "new": [],
+  "return": [
+    {
+      "product_id": "7248366513",
+      "product_name": "에이수스 2023 비보북 프로 16 코어i9 인텔 13세대 지포스 RTX 4050, 콰이어트 블루, 512GB, 16GB, Free DOS, K6602VU-N1027",
+      "current_price": 1276140,
+      "original_price": 2399000,
+      "drop_pct": 46.8,
+      "affiliate_url": "https://link.coupang.com/a/ipAgZ8twbI",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-04T18:11:52Z",
+      "updated_at": "2026-11-07T13:40:15Z"
+    },
+    {
+      "product_id": "7297659549",
+      "product_name": "델 2023 에일리언웨어 X16 코어i7 인텔 13세대 지포스 RTX 4060, Lunar Silver, 1TB, 16GB, WIN11 Pro, DAWX16R1-WP01KR",
+      "current_price": 2380040,
+      "original_price": 3759000,
+      "drop_pct": 36.7,
+      "affiliate_url": "https://link.coupang.com/a/ipAg77mSqa",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-04T18:11:56Z",
+      "updated_at": "2026-11-07T13:40:15Z"
+    },
+    {
+      "product_id": "7792795337",
+      "product_name": "LG전자 2024 그램 Pro 16 코어 Ultra7 인텔 Arc, 에센스화이트, 256GB, 16GB, WIN11 Home, 16Z90SP-GA7CK",
+      "current_price": 1526340,
+      "original_price": 2246410,
+      "drop_pct": 32.1,
+      "affiliate_url": "https://link.coupang.com/a/ip68tWCF40",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-05T01:51:44Z",
+      "updated_at": "2026-11-07T13:40:15Z"
+    },
+    {
+      "product_id": "8952604203",
+      "product_name": "LG전자 2023 울트라 PC 15 코어i5 인텔 13세대 지포스 MX550, 화이트, 256GB, 16GB, WIN11 Home, 15U50R-SA5CK",
+      "current_price": 960000,
+      "original_price": 1390000,
+      "drop_pct": 30.9,
+      "affiliate_url": "https://link.coupang.com/a/ip68CffqTY",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-05T01:51:48Z",
+      "updated_at": "2026-11-07T13:40:15Z"
+    }
+  ],
+  "failed_partner": [],
+  "stale_price": []
+}
