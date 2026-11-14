@@ -1,0 +1,88 @@
+{
+  "updated_at": "2026-11-14T15:06:47Z",
+  "recommended": [],
+  "new": [],
+  "return": [
+    {
+      "product_id": "9296717161",
+      "product_name": "HP 2026 노트북 17 코어5 인텔 14세대, Natural Silver, 17-cn4037TU Super, 512GB, 16GB, WIN11 Home",
+      "current_price": 807600,
+      "original_price": 1198990,
+      "drop_pct": 32.6,
+      "affiliate_url": "https://link.coupang.com/a/iBwfoTv7M4",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-09T21:12:34Z",
+      "updated_at": "2026-11-14T15:06:47Z"
+    },
+    {
+      "product_id": "7650396638",
+      "product_name": "HP 2023 Z북 퓨리 16 G10 코어i9 인텔 13세대 RTX 3500 Ada, 실버, 1TB, 32GB, WIN11 Pro, G10-7B632AV-A3",
+      "current_price": 3472610,
+      "original_price": 6999800,
+      "drop_pct": 50.4,
+      "affiliate_url": "https://link.coupang.com/a/iB7cOAYjOC",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-12T07:23:59Z",
+      "updated_at": "2026-11-14T15:06:47Z"
+    },
+    {
+      "product_id": "8106854690",
+      "product_name": "델 2024 에일리언웨어 X16 R2 코어Ultra9 지포스 RTX 4090, 루나 실버, 1TB, 32GB, WIN11 Pro, DAWX16R2-WP04KR",
+      "current_price": 4475220,
+      "original_price": 6799000,
+      "drop_pct": 34.2,
+      "affiliate_url": "https://link.coupang.com/a/iB9jKI2C9A",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-12T07:53:32Z",
+      "updated_at": "2026-11-14T15:06:47Z"
+    },
+    {
+      "product_id": "7812343469",
+      "product_name": "델 2022 에일리언웨어 X15 R2 코어i9 인텔 12세대 지포스 RTX 3080 Ti, Lunar Light, 1TB, 32GB, WIN11 Pro, DAWX15R2-WP09KR",
+      "current_price": 3352760,
+      "original_price": 5052000,
+      "drop_pct": 33.6,
+      "affiliate_url": "https://link.coupang.com/a/iB9jTQ4Ao0",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-12T07:53:36Z",
+      "updated_at": "2026-11-14T15:06:47Z"
+    },
+    {
+      "product_id": "8204138423",
+      "product_name": "델 2024 인스피론 14 5440 코어5 인텔 14세대, 메탈 아이스블루, 1TB, 8GB, WIN11 Home, DN5440-W001KR",
+      "current_price": 545080,
+      "original_price": 1429900,
+      "drop_pct": 61.9,
+      "affiliate_url": "https://link.coupang.com/a/iCcdGtqcgu",
+      "site_category": "return",
+      "status": "active",
+      "is_recommended": false,
+      "registered_at": "2026-11-12T08:34:09Z",
+      "updated_at": "2026-11-14T15:06:47Z"
+    }
+  ],
+  "failed_partner": [],
+  "stale_price": [
+    {
+      "product_id": "7812327205",
+      "product_name": "델 2022 에일리언웨어 X17 R2 코어i7 인텔 12세대 지포스 RTX 3080 Ti, Lunar Light, 1TB, 32GB, WIN11 Pro, DAWX17R2-WP06KR",
+      "current_price": 3061470,
+      "original_price": 4976900,
+      "drop_pct": 38.5,
+      "affiliate_url": "https://link.coupang.com/a/izcmhhsxk4",
+      "site_category": "return",
+      "status": "price_changed",
+      "is_recommended": false,
+      "registered_at": "2026-11-10T13:13:16Z",
+      "updated_at": "2026-11-14T15:06:47Z"
+    }
+  ]
+}
